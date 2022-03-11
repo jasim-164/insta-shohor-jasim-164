@@ -81,6 +81,38 @@
             </div>
             
         </main>
+        <div class="Question-Answer-Section ">
+            <h2 class="question text-center">
+                How does javascript work? 
+            </h2>
+            <p class="answer text-center bg-info">
+                Javascript is server-side scripting language. javasript mainly converts static page to dynamic page. Google Chrome has its own JavaScript engine called V8. javascript executed code line by line. Whenever we run JavaScript code in browser. Then its code goes to parser. Parser mainly check the error. After checking the error, It creates AST data structure(it stands for Abstract Syntax Tree. Then the code transform into machine code. Then the machine code converts into byte code in system.
+            </p>
+
+            <h2 class="question text-center">
+                What does JavaScript event loop do?
+            </h2>
+
+            <p class="answer text-center bg-info">
+                JS executes all operations on a single thread, but using a few smart data structures, it gives us the illusion of multi-threading.The call stack is responsible for keeping track of all the operations in line to be executed. Whenever a function is finished, it is popped from the stack. The event queue is responsible for sending new functions to the stack for processing. The event loop facilitates this process; it constantly checks whether or not the call stack is empty. If it is empty, new functions are added from the event queue. If it is not, then the current function call is processed. When you call the setTimeout() function, make a fetch request, or click a button, the web browser can do these activities concurrently and asynchronously. The setTimeout(), fetch requests, and DOM events are parts of the Web APIs of the web browser
+            </p>
+
+            <h2 class="question text-center">
+                What is difference between local storages and session storages?
+            </h2>
+            <p class="answer "> 
+                <ul class="bg-info text-center list-style">
+                    <li>In localStorage data is not deleted after the browser has been closed. But in session storage data is deleted.
+                    In session storage, Pages are only saved for the amount of time that the tab or the browser is open; They do not persist after the page reloads and restores. </li>
+
+                    <li> In local storage and session storage both The client can only read local storage.</li>
+                    <li> In local storage data save up to 10MB. But in session storage data save up to 5MB.</li>
+                    <li> Both have client side read only.</li>
+                    <li> Both have 4 methods-(1. setItem() Method  2. getItem() Method  3. removeItem() Method  4. clear() Method )</li>
+
+                </ul>
+             </p>
+        </div>
         <footer></footer>
 
         <!-- add javascript  file  -->
