@@ -143,8 +143,9 @@ const showPosts = (posts) => {
 };
 
 const displayLikedPosts = () => {
-  const productsContainer = document.getElementById( "liked" );
-  productsContainer.innerHTML = "";
+  const productsContainer = document.getElementById( "liked" );// get element from liked post
+  productsContainer.innerHTML = ` 
+  <h1>Liked posts</h1> `;                            //previous all liked post remove
     const likedPosts = getLikedPosts();
     likedPosts.forEach((post) => {
         const div = createPost(post);
@@ -153,7 +154,9 @@ const displayLikedPosts = () => {
 };
 
 const displayReportedPosts = () => {
-  
+  const productsContainer = document.getElementById( "reported" );// get element from reported post
+  productsContainer.innerHTML = `
+   <h1>Reported posts</h1> `;                             //previous all reported post remove
     const reportedPosts = getReportedPosts();//new added
     reportedPosts.forEach((post) => {
         const div = createPost(post);
